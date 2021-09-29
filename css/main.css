@@ -81,7 +81,7 @@ main {
     flex-direction: column;
 }
 
-main .title {
+main .home-main-title {
     color: white;
     text-align: center;
     background-color: #170134;
@@ -89,7 +89,7 @@ main .title {
 
 }
 
-main .title-button {
+main .home-main-button {
     height: 36px;
     width: 300px;
     background-color: #f2f2f2;
@@ -101,7 +101,7 @@ main .title-button {
     margin: 0 auto;
 }
 
-main .title-button:hover {
+main .home-main-button:hover {
     border: 1px solid #c6c6c6;
     box-shadow: 0 10px 8px 0 #20212447;
     color: black;
