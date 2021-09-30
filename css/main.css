@@ -1,24 +1,38 @@
 @import url(‘https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap’);
 
+:root {
+    --dark-blue: #010B40;
+    --blue:#020F59;
+    --dark-purple:#63038C;
+    --purple:#9904D9;
+    --red:#F20574;
+    --perfect-purple:#170134;
+    --white: #FFFFFF; 
+  }
+
 body {
     margin: 0;
     padding: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-image: url("https://i.ibb.co/SxQm0jF/fondo-blog-sanbravo18.jpg");
     background-repeat: no-repeat;
     background-position: center center ;
     height: 1080px;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Roboto mono', monospace;
 }
 a {
     text-decoration: none;
     display: inline;
     color: black;
+}
+
+#home-body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 header {
@@ -31,7 +45,7 @@ header .header-icons-container {
     width: 100%;
     height: 50px;
     display: grid;
-    background-color: #170134;
+    background-color: var(--perfect-purple);
 }
 header .header-icons-container .icons {
     width: 300px;
@@ -45,7 +59,7 @@ header .header-icons-container .icons {
 }
 
 header .icons span {
-    color: white;
+    color: var(--white);
 }
 
 nav {
@@ -62,7 +76,7 @@ nav .nav-logo-container img {
     width: 220px;
     margin-top: 10px;
     color: azure;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 15px;
 }
 
@@ -73,7 +87,7 @@ nav .profile-link {
     margin-right: 50px;
 }
 nav .profile-link a {
-    color: white;
+    color: var(--white);
     border-bottom: 1px solid black;
 }
 
@@ -81,7 +95,6 @@ nav .profile-link a {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
-    font-family: 'Roboto mono', monospace;
 }
 
 .home-main section{
@@ -93,25 +106,27 @@ nav .profile-link a {
 }
 
 .home-main-title {
-    font-size: 30px;
-    font-weight: 700px;
-    letter-spacing: 15px;    
-    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 10px;    
+    color: var(--white);
     text-align: center;
+    -webkit-text-stroke: 1.5px var(--perfect-purple);
     
 }
 
 .home-main-button {
     height: 36px;
     width: 300px;
-    background-color: white;
+    background-color: var(--white);
     border: 0;
     font-size: 18px;
-    color: #170134;
+    color: var(--perfect-purple);
     border-radius: 10px;
     padding: 0 15px;
     margin: 0 auto;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .home-main-button:hover {
@@ -119,4 +134,60 @@ nav .profile-link a {
     box-shadow: 0 10px 8px 0 #20212447;
     color: black;
 
+}
+
+.blogs-main {
+    display: grid;
+}
+
+.blogs-new-container {
+    background-color: var(--perfect-purple);
+    padding: 0 50px 40px;
+}
+
+.blogs-main-new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+    color: var(--white);
+}
+
+.blogs-news-img-container {
+    grid-column: 1;
+
+}
+
+.blogs-news-img-container img {
+    width: 85%;
+    border-radius: 12px;
+}
+
+.blogs-new-info-container {
+    grid-column: 2;
+    
+    border-radius: 8px;
+}
+
+.blogs-new-info-container p {
+    margin-bottom: 35px;
+    
+}
+
+.blogs-post-containers {
+    padding: 0 50px 40px;
+}
+
+.blogs-post-containers h3 {
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    color: var(--red);
+    background-color: #c6c6c6;
+    text-align: center;
+}
+
+.blogs-button {
+    color: var(--white);
+    border: 1px solid var(--dark-purple);
+    padding: 10px 15px;
+    font-size: 14px;
 }
