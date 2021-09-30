@@ -163,8 +163,9 @@ nav .profile-link a {
 }
 
 .blogs-news-img-container img {
-    width: 85%;
+    width: 75%;
     border-radius: 12px;
+    
 }
 
 .blogs-new-info-container {
