@@ -7,7 +7,9 @@
     --purple:#9904D9;
     --red:#F20574;
     --perfect-purple:#170134;
-    --white: #FFFFFF; 
+    --transparent-purple: rgba(23,1,52,0.93);
+    --light-white: #FFFFFF;
+    --white: #FFFFFFDD; 
   }
 
 body {
@@ -59,7 +61,7 @@ header .header-icons-container .icons {
 }
 
 header .icons span {
-    color: var(--white);
+    color: var(--light-white);
 }
 
 nav {
@@ -76,7 +78,7 @@ nav .nav-logo-container img {
     width: 220px;
     margin-top: 10px;
     color: azure;
-    background-color: var(--white);
+    background-color: var(--light-white);
     border-radius: 15px;
 }
 
@@ -87,7 +89,7 @@ nav .profile-link {
     margin-right: 50px;
 }
 nav .profile-link a {
-    color: var(--white);
+    color: var(--light-white);
     border-bottom: 1px solid black;
 }
 
@@ -109,21 +111,22 @@ nav .profile-link a {
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 10px;    
-    color: var(--white);
+    color: var(--light-white);
     text-align: center;
     -webkit-text-stroke: 1.5px var(--perfect-purple);
     
 }
 
 .home-main-button {
-    height: 36px;
+    height: 22px;
     width: 300px;
-    background-color: var(--white);
+    text-align: center;
+    background-color: var(--light-white);
     border: 0;
     font-size: 18px;
     color: var(--perfect-purple);
     border-radius: 10px;
-    padding: 0 15px;
+    padding: 10px 15px;
     margin: 0 auto;
     font-weight: bold;
     cursor: pointer;
@@ -141,15 +144,17 @@ nav .profile-link a {
 }
 
 .blogs-new-container {
-    background-color: var(--perfect-purple);
+    background-color: var(--transparent-purple);
     padding: 0 50px 40px;
+    
 }
 
 .blogs-main-new {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
-    color: var(--white);
+    color: var(--light-white);
+    
 }
 
 .blogs-news-img-container {
@@ -173,15 +178,15 @@ nav .profile-link a {
     
 }
 
-.blogs-post-containers {
+.blogs-post-container {
     padding: 0 50px 40px;
 }
 
-.blogs-post-containers h3 {
+.blogs-post-container h3 {
+    font-size: 30px;
     border-bottom: 1px solid;
     padding-bottom: 20px;
-    color: var(--red);
-    background-color: #c6c6c6;
+    color: var(--light-white);
     text-align: center;
 }
 
@@ -190,4 +195,45 @@ nav .profile-link a {
     border: 1px solid var(--dark-purple);
     padding: 10px 15px;
     font-size: 14px;
+    border-radius: 4px;
+    background-color: var(--dark-blue);
+}
+
+.blogs-button:hover{
+    color: var(--light-white);
+    border: 1px solid var(--red);
+    box-shadow: 0 1px 3px 0 var(--light-white);
+}
+
+.blogs-post-container .post-container {
+    display: inline-block;
+    padding-left: 10px ;
+    max-width: 30%;
+    margin-bottom: 50px;
+    
+}
+
+.blogs-post-container .post-container p {
+    margin-bottom: 35px;
+}
+
+.blogs-post-container .post-container img {
+    width: 100%;
+}
+.blogs-post-container .post-container a {
+    display: inline-block;
+    
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: var(--perfect-purple);
+    border-top: 35px solid var(--blue);
+}
+
+footer p {
+    color: var(--light-white);
+    margin-top: 30px;
+    text-align: center;
 }
