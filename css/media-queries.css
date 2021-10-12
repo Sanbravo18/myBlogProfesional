@@ -21,4 +21,17 @@
     .blogs-post-container .post-container {
         max-width: 95%;
     }
+    header .header-icons-container .icons {
+        justify-self: center;
+    }
+    nav .nav-logo-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    nav .profile-link {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }
